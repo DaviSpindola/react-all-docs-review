@@ -17,5 +17,13 @@ const RefComponent = () => {
     );
   }
 
-  return <div></div>;
+  return (
+    <div className="example-column">
+      <button onClick={incrementAndDelayLoggin}>increment</button>
+      <span>Number state: {numberState}</span>
+      <span>Number ref: {numberRef.current}</span>
+    </div>
+  );
 };
+
+export default RefComponent;

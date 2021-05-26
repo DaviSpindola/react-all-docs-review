@@ -1,10 +1,18 @@
+import AddSection from "./AddSection";
+import RefComponent from "./RefComponent";
 import "./styles.css";
+import UseEffectComponent from "./UseEffectComponent";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h5>Hello CodeSandbox</h5>
+      <AddSection title="Using Refs">
+        <RefComponent />
+      </AddSection>
+      <AddSection title="Using Effects">
+        <UseEffectComponent />
+      </AddSection>
     </div>
   );
 }

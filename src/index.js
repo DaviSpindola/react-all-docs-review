@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
+import "milligram";
 
 import App from "./App";
 
