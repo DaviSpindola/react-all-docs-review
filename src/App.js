@@ -1,22 +1,22 @@
-import AddSection from "./AddSection"
-import RefComponent from "./RefComponent"
 import "./styles.css"
-import UseEffectComponent from "./UseEffectComponent"
-import RGBColors from "./useReducer/RGBColors"
+
+import Section from "./components/Section"
+import { NumericCounter } from "./useRef"
+import { Timer } from "./useEffect"
+import { RGBColorsManager } from "./useReducer"
 
 export default function App() {
-	return (
-		<div className="App">
-			<h5>Hello CodeSandbox</h5>
-			<AddSection title="Using Refs">
-				<RefComponent />
-			</AddSection>
-			<AddSection title="Using Effects">
-				<UseEffectComponent />
-			</AddSection>
-			<AddSection title="Using Reducer">
-				<RGBColors />
-			</AddSection>
-		</div>
-	)
+  return (
+    <div>
+      <Section title="Using Refs">
+        <NumericCounter />
+      </Section>
+      <Section title="Using Effects">
+        <Timer />
+      </Section>
+      <Section title="Using Reducer">
+        <RGBColorsManager />
+      </Section>
+    </div>
+  )
 }

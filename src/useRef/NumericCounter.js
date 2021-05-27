@@ -1,12 +1,12 @@
-const { useState, useRef } = require("react");
+const { useState, useRef } = require("react")
 
-const RefComponent = () => {
-  const [numberState, setNumber] = useState(0); // numeric state
-  const numberRef = useRef(0);
+const NumericCounter = () => {
+  const [numberState, setNumber] = useState(0) // numeric state
+  const numberRef = useRef(0)
 
   function incrementAndDelayLoggin() {
-    setNumber(numberState + 1);
-    numberRef.current++;
+    setNumber(numberState + 1)
+    numberRef.current++
 
     setTimeout(
       () =>
@@ -14,7 +14,7 @@ const RefComponent = () => {
           `Number state: ${numberState} | Number Ref: ${numberRef.current}`
         ),
       2000
-    );
+    )
   }
 
   return (
@@ -23,7 +23,7 @@ const RefComponent = () => {
       <span>Number state: {numberState}</span>
       <span>Number ref: {numberRef.current}</span>
     </div>
-  );
-};
+  )
+}
 
-export default RefComponent;
+export default NumericCounter

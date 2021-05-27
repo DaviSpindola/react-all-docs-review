@@ -87,7 +87,7 @@ const ColorOption = ({
   )
 }
 
-const ColoredBox = ({ r, g, b }) => {
+const OutputColor = ({ r, g, b }) => {
   return (
     <div style={{ backgroundColor: RGB(r, g, b), width: 100, height: 100 }}>
       hello
@@ -95,7 +95,7 @@ const ColoredBox = ({ r, g, b }) => {
   )
 }
 
-const RGBColors = () => {
+const RGBColorsManager = () => {
   const {
     values: { red, green, blue },
     increment,
@@ -126,9 +126,9 @@ const RGBColors = () => {
         handleChange={update}
         colorValue={blue}
       />
-      <ColoredBox {...{ r: red, g: green, b: blue }} />
+      <OutputColor {...{ r: red, g: green, b: blue }} />
     </div>
   )
 }
 
-export default RGBColors
+export default RGBColorsManager
