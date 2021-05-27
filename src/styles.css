@@ -1,16 +1,11 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
 .example-column {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 blockquote {
-  background-color: rgb(89, 70, 197);
-  color: white;
-  text-transform: uppercase;
-  border-left: 2px solid rgb(248, 236, 213);
+	background-color: rgb(89, 70, 197);
+	color: white;
+	text-transform: uppercase;
+	border-left: 2px solid rgb(248, 236, 213);
 }
